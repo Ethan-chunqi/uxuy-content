@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="theme-color" content="#f8f9fb" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; object-src 'none'" />
+  <title>UXUY · 内部访问</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="./UXUY-Sans-SC.woff2" as="font" type="font/woff2" crossorigin />
+  <link id="gateStyles" rel="stylesheet" href="./login.css?v=20261103-github-v1" />
+</head>
+<body>
+  <header class="access-brand"><img src="./uxuy-logo.svg" alt="UXUY" /><span>INTERNAL WORKSPACE</span></header>
+  <main class="access-page">
+    <section class="access-card" aria-labelledby="accessTitle">
+      <div class="access-eyebrow">UXUY / CONTENT STUDIO</div>
+      <div class="access-lock" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 15v2"/></svg></div>
+      <h1 id="accessTitle">内部访问</h1>
+      <p class="access-description">仅供 UXUY 内部人员使用。</p>
+      <form id="accessForm">
+        <label for="accessPassword">访问密码</label>
+        <div class="password-field"><input id="accessPassword" name="password" type="password" autocomplete="current-password" required maxlength="256" placeholder="请输入内部访问密码" aria-describedby="accessMessage" /><button class="password-visibility" type="button" id="passwordVisibility" aria-label="显示密码" aria-pressed="false">显示</button></div>
+        <p class="access-message" id="accessMessage" role="status" aria-live="polite"></p>
+        <button class="access-submit" id="accessSubmit" type="submit"><span>进入工作台</span><span aria-hidden="true">↗</span></button>
+      </form>
+      <footer class="access-footer"><span class="status-dot"></span>内容工作台<span class="footer-divider">/</span>内部资料</footer>
+    </section>
+  </main>
+  <footer class="page-footer">UXUY · Bringing Global Assets On-Chain</footer>
+  <script src="./gate.js?v=20261103-github-v1" defer></script>
+</body>
+</html>
