@@ -69,9 +69,9 @@ button { cursor: pointer; }
   object-fit: cover; object-position: 61% 55%; z-index: -2;
 }
 .cover-type {
-  position: absolute; top: clamp(32px, 4.3vw, 74px); left: clamp(26px, 4.1vw, 70px);
+  position: absolute; top: clamp(27px, 2.8vw, 46px); left: clamp(24px, 3.35vw, 55px);
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(64px, 7.2vw, 119px); font-weight: 600;
+  font-size: clamp(52px, min(6.4vw, 9.4svh), 92px); font-weight: 600;
   line-height: .85; letter-spacing: -.062em; color: #222426;
 }
 .cover-type span { color: var(--accent); }
@@ -122,7 +122,7 @@ button:focus-visible { outline:2px solid #77300e; outline-offset:3px; }
 @media (min-width:761px) and (max-width:990px) {
   .entry-layout { grid-template-columns:1.02fr 1fr; }
   .access-panel { padding:32px; }
-  .cover-type { font-size:clamp(59px,7.6vw,76px); left:24px; }
+  .cover-type { font-size:clamp(52px,min(7.6vw,9.4svh),76px); left:24px; }
   .cover-caption { left:24px; font-size:.78rem; }
 }
 @media (max-width:760px) {
@@ -133,8 +133,8 @@ button:focus-visible { outline:2px solid #77300e; outline-offset:3px; }
   .restricted { gap:8px; font-size:.8125rem; }
   .entry-layout { display:block; min-height:0; border-radius:16px; margin:0 auto; }
   .studio-cover { height:clamp(155px,48vw,228px); }
-  .cover-art { object-position:65% 60%; }
-  .cover-type { top:20px; left:20px; font-size:clamp(43px,10vw,62px); line-height:.88; }
+  .cover-art { object-position:65% 81%; }
+  .cover-type { top:16px; left:14px; font-size:clamp(28px,7.3vw,47px); line-height:.88; }
   .cover-caption { display:none; }
   .access-panel { padding:28px clamp(20px,5.8vw,38px) 32px; }
   h1 { font-size:2rem; }
@@ -146,7 +146,7 @@ button:focus-visible { outline:2px solid #77300e; outline-offset:3px; }
 @media (max-width:380px), (max-height:520px) and (max-width:760px) {
   .masthead { min-height:56px; }
   .studio-cover { height:134px; }
-  .cover-type { font-size:38px; top:16px; }
+  .cover-type { font-size:26px; top:13px; left:12px; }
   .cover-caption { display:none; }
   .access-panel { padding:21px 18px 25px; }
 }
